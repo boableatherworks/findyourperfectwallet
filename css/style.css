@@ -16,10 +16,15 @@
   font-weight: bold;
   font-style: normal;
 }
+
+:root {
+  --vh: 100vh;
+}
+
 body {
   width: 100%;
   max-width: 500px;
-  min-height: 100vh;
+  min-height: var(--vh);
   margin-inline: auto;
   font-family: "Zen Kaku Gothic New",sans-serif;
   background: #EFEFEF;

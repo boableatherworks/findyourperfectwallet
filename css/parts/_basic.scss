@@ -53,5 +53,10 @@ button {
     &:hover {
       transform: scale(1.1);
     }
+
+    &:active,
+    &:focus {
+  transform: scale(1);
+    }
 }
 

@@ -29,6 +29,13 @@ body {
   position: relative;
 }
 
+@media screen and (max-width: 600px) {
+  body {
+    min-height: 90vh;
+  }
+}
+
+
 img {
   vertical-align: bottom;
   max-width: 100%;

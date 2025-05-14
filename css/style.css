@@ -239,6 +239,7 @@ h2 {
 #resultArea #restartBtn {
   width: 280px;
   margin-block: 16px 150px;
+  margin-inline: auto;
   background-color: #3B2A70;
   color: #FED710;
   font-weight: 600;

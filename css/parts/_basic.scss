@@ -24,12 +24,12 @@ body {
   max-width: 500px;
   min-height: 100vh;
   margin-inline: auto;
-  /*padding-top: 60px;*/
   font-family: "Zen Kaku Gothic New",sans-serif;
   background: #EFEFEF;
   color: #3B2A70;
   text-align: center;
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 img {

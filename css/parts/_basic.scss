@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "optima";
+  src: url(./font/optima/OPTIMA.TTF) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "optima";
+  src: url(./font/optima/Optima\ Medium.ttf) format("truetype");
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "optima";
+  src: url(./font/optima/OPTIMA_B.TTF) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  width: 100%;
+  max-width: 500px;
+  min-height: 100vh;
+  margin-inline: auto;
+  padding-top: 60px;
+  font-family: "Zen Kaku Gothic New",sans-serif;
+  background: #EFEFEF;
+  color: #3B2A70;
+  text-align: center;
+  position: relative;
+}
+
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
+button {
+    transition: transform 0.5s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+}
+

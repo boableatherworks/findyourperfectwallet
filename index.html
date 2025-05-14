@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Find Your Perfect Wallet Boab leather works</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/boabfavicon.ico" sizes="300x300">
+  <!-- スマホ用アイコン -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+  <!-- 診断スタート画面 -->
+  <div id="startPage">
+    <h1 class="small">Find your</h1>
+    <h1>perfect wallet.</h1>
+
+    <div class="arrow"></div>
+
+    <button id="startBtn"><img src="img/box.png" alt=""></button>
+
+    <p id="startText">PRESS TO START</p>
+  </div>
+
+  <!-- 診断質問エリア -->
+  <div id="questionArea" style="display:none;">
+    <p id="questionNumber"></p>
+    <p id="questionText"></p>
+    <div id="buttonArea">
+      <button id="yesBtn" class="answerBtn" data-answer="yes"><img src="img/yes.png" alt=""></button>
+      <button id="noBtn" class="answerBtn" data-answer="no"><img src="img/no.png" alt=""></button>
+    </div>
+
+    <div id="progressBarContainer">
+      <div class="progress-dot" id="dot1"></div>
+      <div class="progress-line" id="line1"></div>
+      <div class="progress-dot" id="dot2"></div>
+      <div class="progress-line" id="line2"></div>
+      <div class="progress-dot" id="dot3"></div>
+    </div>
+
+    <div id="bottomText">
+      <p>Find your</p>
+      <p class="big">perfect wallet</p>
+    </div>
+
+  </div>
+
+  <!-- 診断結果エリア -->
+  <div id="resultArea" style="display:none;">
+    <h2>The perfect wallet</h2>
+    <h2>FOR YOU!</h2>
+
+    <div class="arrow"></div>
+
+    <img id="resultImage" src="" alt="診断結果画像" style="max-width:300px; display:block; margin:20px auto;">
+    <p id="descriptionText"></p>
+
+    <button class="online"><a id="productLink" href="#" target="_blank" class="product-button"><img src="img/online.png"
+          alt=""></a></button>
+
+    <button id="restartBtn">もう一度診断する</button>
+  </div>
+
+  <footer id="footer">
+    <div id="footerInner"><a href="https://www.instagram.com/boab_leather_works/?hl=en" target="_blank"><img
+          src="img/boablogo.png" alt=""></a></div>
+  </footer>
+
+
+
+</body>
+
+</html>

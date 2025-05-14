@@ -1,0 +1,227 @@
+@charset 'UTF-8';
+
+@use 'parts/_basic.scss';
+@import 'parts/_mixin.scss';
+
+h1,
+h2 {
+  font-family: "optima", sans-serif;
+  font-weight: bold;
+  font-size: 38px;
+  letter-spacing: 0.09em;
+  line-height: 1.4em;
+}
+
+.small {
+  font-size: 28px;
+}
+
+//スタートページ
+.arrow {
+  margin-top: 20px;
+  margin-inline: auto;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 2px;
+    height: 20px;
+    background: #3B2A70;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: skewX(-31deg) translateX(6px);
+  }
+
+  &::after {
+    content: "";
+    width: 2px;
+    height: 60px;
+    background: #3B2A70;
+    position: absolute;
+    top: 0;
+    left: 50%;
+  }
+}
+
+#startBtn {
+  width: 200px;
+  margin-top: 80px;
+  animation: floatUpDown 2s ease-in-out infinite;
+
+  img {
+    transition: transform 0.5s ease;
+  
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#startText {
+  margin-top: 50px;
+  opacity: 0.8;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+//質問ページ
+
+#questionArea {
+  margin-inline: auto;
+  
+  @include sp {
+    width: 90%;
+  }
+
+  #questionNumber {
+    font-family: 'optima', sans-serif;
+    font-size: 28px;
+    letter-spacing: 0.15em;
+  }
+
+  #questionText {
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+  }
+
+  #buttonArea {
+    width: 250px;
+    margin-top: 40px;
+    margin-inline: auto;
+
+    #noBtn {
+      margin-top: 20px;
+    }
+  }
+
+  // プログレスバー
+  #progressBarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  
+  .progress-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #3B2A70;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .progress-dot.passed {
+    background-color: #A08CBD;
+  }
+  
+  .progress-dot.current {
+    background-color: #FED710;
+    transform: scale(1.2);
+  }
+  
+  .progress-line {
+    width: 100px;
+    height: 1px;
+    background-color: #3B2A70;
+  }
+  
+  #bottomText {
+    margin-top: 30px;
+    font-family: 'optima',sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    line-height: 1.4em;
+
+    .big {
+      font-size: 28px;
+
+    }
+  }
+}
+
+//診断結果ページ
+#resultArea {
+
+  @include sp {
+    width: 90%;
+    margin-inline: auto;
+    justify-content: center;
+  }
+
+  h2 {
+    @include sp {
+      font-size: 28px;
+    }
+  }
+
+  #resultImage {
+    padding-top: 80px;
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: opacity 2s ease, transform 1s ease;
+  }
+
+  #resultImage.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  #descriptionText {
+    text-align: left;
+    line-height: 1.8em;
+  }
+
+  .online {
+    width: 300px;
+    margin-top: 16px;
+    margin-inline: auto;
+  }
+
+  #restartBtn {
+    width: 280px;
+    margin-block: 16px 150px;
+    background-color: #3B2A70;
+    color: #FED710;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    padding-block: 12px;
+    border-radius: 30px;
+
+    &:hover {
+      background-color: #FED710;
+      color: #3B2A70;
+      transition: all .4s;
+    }
+  }
+}
+
+#footer {
+  width: 100%;
+  position: absolute;
+  bottom: 3%;
+
+  #footerInner {
+    img {
+      width: 120px;
+    }
+  }
+}

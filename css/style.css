@@ -1,0 +1,254 @@
+@font-face {
+  font-family: "optima";
+  src: url(./font/optima/OPTIMA.TTF) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "optima";
+  src: url(./font/optima/Optima\ Medium.ttf) format("truetype");
+  font-weight: medium;
+  font-style: normal;
+}
+@font-face {
+  font-family: "optima";
+  src: url(./font/optima/OPTIMA_B.TTF) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+body {
+  width: 100%;
+  max-width: 500px;
+  min-height: 100vh;
+  margin-inline: auto;
+  padding-top: 60px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  background: #EFEFEF;
+  color: #3B2A70;
+  text-align: center;
+  position: relative;
+}
+
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+}
+a:hover {
+  opacity: 0.8;
+}
+
+button {
+  transition: transform 0.5s ease;
+}
+button:hover {
+  transform: scale(1.1);
+}
+
+h1,
+h2 {
+  font-family: "optima", sans-serif;
+  font-weight: bold;
+  font-size: 38px;
+  letter-spacing: 0.09em;
+  line-height: 1.4em;
+}
+
+.small {
+  font-size: 28px;
+}
+
+.arrow {
+  margin-top: 20px;
+  margin-inline: auto;
+  position: relative;
+}
+.arrow::before {
+  content: "";
+  width: 2px;
+  height: 20px;
+  background: #3B2A70;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: skewX(-31deg) translateX(6px);
+}
+.arrow::after {
+  content: "";
+  width: 2px;
+  height: 60px;
+  background: #3B2A70;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+#startBtn {
+  width: 200px;
+  margin-top: 80px;
+  -webkit-animation: floatUpDown 2s ease-in-out infinite;
+          animation: floatUpDown 2s ease-in-out infinite;
+}
+#startBtn img {
+  transition: transform 0.5s ease;
+}
+#startBtn img:hover {
+  transform: scale(1.1);
+}
+
+@-webkit-keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+#startText {
+  margin-top: 50px;
+  opacity: 0.8;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+#questionArea {
+  margin-inline: auto;
+}
+@media screen and (max-width: 600px) {
+  #questionArea {
+    width: 90%;
+  }
+}
+#questionArea #questionNumber {
+  font-family: "optima", sans-serif;
+  font-size: 28px;
+  letter-spacing: 0.15em;
+}
+#questionArea #questionText {
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+}
+#questionArea #buttonArea {
+  width: 250px;
+  margin-top: 40px;
+  margin-inline: auto;
+}
+#questionArea #buttonArea #noBtn {
+  margin-top: 20px;
+}
+#questionArea #progressBarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+#questionArea .progress-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #3B2A70;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+#questionArea .progress-dot.passed {
+  background-color: #A08CBD;
+}
+#questionArea .progress-dot.current {
+  background-color: #FED710;
+  transform: scale(1.2);
+}
+#questionArea .progress-line {
+  width: 100px;
+  height: 1px;
+  background-color: #3B2A70;
+}
+#questionArea #bottomText {
+  margin-top: 30px;
+  font-family: "optima", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  line-height: 1.4em;
+}
+#questionArea #bottomText .big {
+  font-size: 28px;
+}
+
+@media screen and (max-width: 600px) {
+  #resultArea {
+    width: 90%;
+    margin-inline: auto;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  #resultArea h2 {
+    font-size: 28px;
+  }
+}
+#resultArea #resultImage {
+  padding-top: 80px;
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: opacity 2s ease, transform 1s ease;
+}
+#resultArea #resultImage.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+#resultArea #descriptionText {
+  text-align: left;
+  line-height: 1.8em;
+}
+#resultArea .online {
+  width: 300px;
+  margin-top: 16px;
+  margin-inline: auto;
+}
+#resultArea #restartBtn {
+  width: 280px;
+  margin-block: 16px 150px;
+  background-color: #3B2A70;
+  color: #FED710;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  padding-block: 12px;
+  border-radius: 30px;
+}
+#resultArea #restartBtn:hover {
+  background-color: #FED710;
+  color: #3B2A70;
+  transition: all 0.4s;
+}
+
+#footer {
+  width: 100%;
+  position: absolute;
+  bottom: 3%;
+}
+#footer #footerInner img {
+  width: 120px;
+}
+/*# sourceMappingURL=style.css.map */

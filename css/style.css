@@ -56,6 +56,11 @@ button:hover {
   transform: scale(1.1);
 }
 
+button:active,
+button:focus {
+  transform: scale(1);
+}
+
 #startPage, #questionArea, #resultArea {
   flex: 1;
   display: flex;

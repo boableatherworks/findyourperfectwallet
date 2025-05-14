@@ -3,6 +3,14 @@
 @use 'parts/_basic.scss';
 @import 'parts/_mixin.scss';
 
+
+#startPage, #questionArea, #resultArea {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 h1,
 h2 {
   font-family: "optima", sans-serif;
@@ -17,6 +25,7 @@ h2 {
 }
 
 //スタートページ
+
 .arrow {
   margin-top: 20px;
   margin-inline: auto;
@@ -47,6 +56,7 @@ h2 {
 #startBtn {
   width: 200px;
   margin-top: 80px;
+  margin-inline: auto;
   animation: floatUpDown 2s ease-in-out infinite;
 
   img {
@@ -216,8 +226,7 @@ h2 {
 
 #footer {
   width: 100%;
-  position: absolute;
-  bottom: 3%;
+  margin-top: auto;
 
   #footerInner {
     img {

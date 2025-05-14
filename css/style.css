@@ -51,6 +51,13 @@ button:hover {
   transform: scale(1.1);
 }
 
+#startPage, #questionArea, #resultArea {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 h1,
 h2 {
   font-family: "optima", sans-serif;
@@ -63,11 +70,6 @@ h2 {
 .small {
   font-size: 28px;
 }
-
-#startPage {
-  padding-top: 60px;
-}
-
 
 .arrow {
   margin-top: 20px;
@@ -97,6 +99,7 @@ h2 {
 #startBtn {
   width: 200px;
   margin-top: 80px;
+  margin-inline: auto;
   -webkit-animation: floatUpDown 2s ease-in-out infinite;
           animation: floatUpDown 2s ease-in-out infinite;
 }
@@ -138,7 +141,6 @@ h2 {
 }
 
 #questionArea {
-  padding-top: 60px;
   margin-inline: auto;
 }
 @media screen and (max-width: 600px) {
@@ -203,10 +205,6 @@ h2 {
   font-size: 28px;
 }
 
-#resultArea {
-  padding-top: 60px;
-}
-
 @media screen and (max-width: 600px) {
   #resultArea {
     width: 90%;
@@ -256,8 +254,7 @@ h2 {
 
 #footer {
   width: 100%;
-  position: absolute;
-  bottom: 3%;
+  margin-top: auto;
 }
 #footer #footerInner img {
   width: 120px;

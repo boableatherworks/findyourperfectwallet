@@ -158,7 +158,6 @@ $(function () {
   let step = 1;
 
   $(".answerBtn").click(function () {
-    this.blur();
     const answer = $(this).data("answer");
     const q = $("#questionArea").data("current");
     const next = questions[q][answer];
@@ -199,3 +198,22 @@ $(function () {
     });
   });
 });
+
+// アンドロイド用
+$(function(){
+  // YES/NOボタン押したときにフォーカスを外す
+  $('.answerBtn').on('click', function() {
+    this.blur(); // ←これが効く！
+  });
+
+  // スタートボタンも同様にするならこれも
+  $('#startBtn').on('click', function() {
+    this.blur();
+  });
+
+  // リスタートボタンも
+  $('#restartBtn').on('click', function() {
+    this.blur();
+  });
+});
+

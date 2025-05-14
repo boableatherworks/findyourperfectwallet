@@ -199,21 +199,3 @@ $(function () {
   });
 });
 
-// アンドロイド用
-$(function(){
-  // YES/NOボタン押したときにフォーカスを外す
-  $('.answerBtn').on('click', function() {
-    this.blur(); // ←これが効く！
-  });
-
-  // スタートボタンも同様にするならこれも
-  $('#startBtn').on('click', function() {
-    this.blur();
-  });
-
-  // リスタートボタンも
-  $('#restartBtn').on('click', function() {
-    this.blur();
-  });
-});
-

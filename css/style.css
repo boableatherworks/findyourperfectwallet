@@ -60,7 +60,7 @@ button:hover {
 
 button:active,
 button:focus {
-  transform: scale(1);
+  transform: none;
 }
 
 #startPage, #questionArea, #resultArea {

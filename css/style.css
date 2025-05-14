@@ -21,7 +21,7 @@ body {
   max-width: 500px;
   min-height: 100vh;
   margin-inline: auto;
-  padding-top: 60px;
+  /*padding-top: 60px;*/
   font-family: "Zen Kaku Gothic New", sans-serif;
   background: #EFEFEF;
   color: #3B2A70;
@@ -62,6 +62,11 @@ h2 {
 .small {
   font-size: 28px;
 }
+
+#startPage {
+  padding-top: 60px;
+}
+
 
 .arrow {
   margin-top: 20px;
@@ -132,6 +137,7 @@ h2 {
 }
 
 #questionArea {
+  padding-top: 60px;
   margin-inline: auto;
 }
 @media screen and (max-width: 600px) {
@@ -194,6 +200,10 @@ h2 {
 }
 #questionArea #bottomText .big {
   font-size: 28px;
+}
+
+#resultArea {
+  padding-top: 60px;
 }
 
 @media screen and (max-width: 600px) {

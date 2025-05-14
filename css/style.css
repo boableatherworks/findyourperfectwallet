@@ -51,6 +51,8 @@ a:hover {
 
 button {
   transition: transform 0.5s ease;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
 }
 button:hover {
   transform: scale(1.1);

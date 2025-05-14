@@ -21,18 +21,12 @@ body {
   max-width: 500px;
   min-height: 100vh;
   margin-inline: auto;
-  /*padding-top: 60px;*/
-  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-family: "Zen Kaku Gothic New",sans-serif;
   background: #EFEFEF;
   color: #3B2A70;
   text-align: center;
-  position: relative;
-}
-
-@media screen and (max-width: 600px) {
-  body {
-    min-height: 90vh;
-  }
+  display: flex;
+  flex-direction: column;
 }
 
 

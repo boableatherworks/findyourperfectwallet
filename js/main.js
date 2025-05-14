@@ -158,6 +158,7 @@ $(function () {
   let step = 1;
 
   $(".answerBtn").click(function () {
+    this.blur();
     const answer = $(this).data("answer");
     const q = $("#questionArea").data("current");
     const next = questions[q][answer];
